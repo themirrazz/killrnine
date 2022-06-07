@@ -1,4 +1,4 @@
-# 99999
+# Killr9
 A JavaScript/TypeScript virus that will kill virtually anything
 
 
@@ -34,6 +34,11 @@ Paste the JS code inside of a script tag.
 
 ohSnap()
 </script>
+```
+
+You can also link it like so:
+```html
+<script src="path/to/killr.js"></script>
 ```
 
 ## Kill a Windows96 instance
@@ -107,4 +112,5 @@ ohSnap()
 ```
 Pasting it into NodeJS will result in NodeJS crashing.
 If you're using a NodeJS Repl on [Replit](https://replit.com/), you might see text saying `The Repl proccess died unexpectedly`.
-To Kill Windows98 or above, open the MS-DOS prompt. Make sure you have Windows Script Host by running WSCRIPT.EXE. If it shows WSH settings, close them and run `WSCRIPT.EXE path/to/99999.js`
+To Kill Windows98 or above, open the MS-DOS prompt. Make sure you have Windows Script Host by running WSCRIPT.EXE. If it shows WSH settings, close them and run `WSCRIPT.EXE path/to/killr.js`.
+Your computer will lag, crash, keep the fan on, and depending on the computer and how much RAM is already in use, BSOD(Blue screen of death).
