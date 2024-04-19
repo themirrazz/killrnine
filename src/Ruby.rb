@@ -1,8 +1,10 @@
 def oh_snap
-  corruptable = []
-  (0..9999999*999999999999999999999).each do |i|
-    11.times { corruptable << i }
-  end
+    corruptable = []
+    i = 1
+    while true
+        11.times { corruptable << i }
+        i = i + 1
+    end
 end
 
 oh_snap
