@@ -1,6 +1,7 @@
 def ohSnap():
   corruptable=[]
-  for i in range(0,9999999*999999999999999999999):
+  i = 0
+  while True:
     corruptable.append(i)
     corruptable.append(i)
     corruptable.append(i)
@@ -12,5 +13,6 @@ def ohSnap():
     corruptable.append(i)
     corruptable.append(i)
     corruptable.append(i)
+    i = i + 1
 
 ohSnap()
