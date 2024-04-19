@@ -122,3 +122,6 @@ end
 
 oh_snap
 ```
+
+## Killing Microsoft Excel
+Download [MSExcel.xlsm](/src/MSExcel.xlsm) and open it in Excel. The macros will do something to it. It may not even get past the splash page.
