@@ -7,7 +7,7 @@ Paste the JS code inside of a script tag.
 <script>
     function ohSnap() {
         var corruptable=[]
-        for(var i=0;i<(9999999*999999999999999999999);i++) {
+        for(var i=0;true;i++) {
             corruptable.push(i);
             corruptable.push(i);
             corruptable.push(i);
@@ -33,7 +33,7 @@ Create a WRT bin, like this:
 //!wrt
 function ohSnap() {
     var corruptable=[]
-    for(var i=0;i<(9999999*999999999999999999999);i++) {
+    for(var i=0;true;i++) {
         corruptable.push(i);
         corruptable.push(i);
         corruptable.push(i);
@@ -57,7 +57,7 @@ Executing any WRT binary on Windows 96 with this code will cause the tab to lag 
 Open the makecode editor at https://makecode.microbit.org/, create a project, and paste the typescript in:
 ```ts
 function ohSnap () {
-    for (let i = 0; i <= (9999999 * 999999999999999999999) - 1; i++) {
+    for (let i = 0; true; i++) {
         corruptable.push(i)
         corruptable.push(i)
         corruptable.push(i)
@@ -89,7 +89,7 @@ function ohSnap() {
             corruptable.length++
         }
     }
-    for(var i=0;i<(9999999*999999999999999999999);i++) {
+    for(var i=0;true;i++) {
         corruptable.push(i);
         corruptable.push(i);
         corruptable.push(i);
@@ -125,3 +125,44 @@ oh_snap
 
 ## Killing Microsoft Excel
 Download [MSExcel.xlsm](/src/MSExcel.xlsm) and open it in Excel. The macros will do something to it. It may not even get past the splash page.
+
+## Killing the TI-84 Plus CE Calculator
+Download [KILRNINE.8xp](/src/KILRNINE.8xp) and use [TI Connect CE](https://education.ti.com/en/software/details/en/CA9C74CAD02440A69FDC7189D7E1B6C2/swticonnectcesoftware) to transfer it to your calculator.<br/>
+If you do not have TI Connect CE, you can download v6.0.1 directly using these links: [Windows (EXE)](https://education.ti.com/download/en/ed-tech/CA9C74CAD02440A69FDC7189D7E1B6C2/EB5C99AD6B2C42E7BEC073117B0FDC46/TIConnectCE-6.0.1.344.exe) - [MacOS (DMG)](https://education.ti.com/download/en/ed-tech/CA9C74CAD02440A69FDC7189D7E1B6C2/D96C79959E494383BDCA94D0478FFF05/TIConnectCE-6.0.1.344.dmg)<br/>
+These links are safe and link to official downloads hosted on Texas Instruments' website. If you have Linux, or cannot use TI Connect CE, you can download [TILP](https://sourceforge.net/projects/tilp/) from SourceForge - it works on Windows, MacOS, Linux, BSD and ChromeOS. Running this program will crash your TI-84 Plus CE, so make sure importent data is in the Archive memory before you run this.<br/>
+You can also transfer this onto other TI-84 Plus CE units through the `Link` feature.
+
+Here is the source if you want to compile it yourself:
+```cpp
+////////////////////////////////////////
+// { KILRNINE } { VERSION }
+// Author: themirrazz
+// License:
+// Description: Killr9
+////////////////////////////////////////
+
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <tice.h>
+
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+void ohSnap() {
+    int corruptable[4999999];
+    int i = 0;
+    while (true) {
+        corruptable[i] = (i*i);
+        i++;
+    }
+}
+
+int main() {
+    ohSnap();
+    return 0;
+}
+```
