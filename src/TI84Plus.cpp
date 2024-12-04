@@ -17,15 +17,17 @@
 
 
 void ohSnap() {
-    int corruptable[4999999];
+    int corruptable[5592405];
     int i = 0;
-    while (true) {
+    while (i < 5592405) {
         corruptable[i] = (i*i);
         i++;
     }
 }
 
 int main() {
-    ohSnap();
+    while (true) {
+        ohSnap();
+    }
     return 0;
 }
